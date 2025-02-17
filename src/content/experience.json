@@ -1,0 +1,16 @@
+[
+    {
+      "id": "0",
+      "company": "JPMorgan Chase",
+      "jobTitle": "Software Engineer",
+      "years": "2022 - Current",
+      "description": "UI Software Engineer Focusing on Improving User experience and performance of internal application."
+    },
+    {
+      "id": "1",
+      "company": "Abercrombie & Fitch",
+      "jobTitle": "Web Content Developer",
+      "years": "2020 - 2022",
+      "description": "Managed and maintained content for domestic and regional kids’ sites, ensuring timely updates for promotions and sales."
+    }
+  ]

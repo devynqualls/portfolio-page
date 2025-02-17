@@ -1,5 +1,10 @@
 import React from 'react';
+import styled from 'styled-components';
 import ProjectCard from '../components/ProjectCard';
+
+const ProjectsContainer = styled.div`
+  padding: 20px;
+`;
 
 const projects = [
   {
@@ -16,7 +21,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div>
+    <ProjectsContainer>
       <h1>My Projects</h1>
       {projects.map((project, index) => (
         <ProjectCard
@@ -26,7 +31,7 @@ const Projects = () => {
           link={project.link}
         />
       ))}
-    </div>
+    </ProjectsContainer>
   );
 };
 

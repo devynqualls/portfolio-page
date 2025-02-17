@@ -1,27 +1,29 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Navbar from './components/Navbar';
-import Home from './pages/Home';
-import About from './pages/About';
-import Projects from './pages/Projects';
-import './App.css';
+import { React, useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { CssBaseline, ThemeProvider } from "@mui/material";
+import Main from "./components/Main";
+import NotFound404 from "./components/NotFound404";
+import { ThemeContext } from "./theme/ThemeContext";
+import { darkTheme, lightTheme } from "./theme/Themes";
 
 function App() {
+  const [theme, setTheme] = useState(() => {
+    return window.localStorage.getItem("theme") || "light";
+  });
+  const muiTheme = theme === "light" ? lightTheme : darkTheme;
   return (
-    <Router>
-      <div className="App">
-        <Header />
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
+    <ThemeContext.Provider value={{ theme, setTheme }}>
+      <ThemeProvider theme={muiTheme}>
+        <CssBaseline>
+          <Router>
+            <Routes>
+              <Route exact path="/" element={<Main />} />
+              <Route path="*" element={<NotFound404 />} />
+            </Routes>
+          </Router>
+        </CssBaseline>
+      </ThemeProvider>
+    </ThemeContext.Provider>
   );
 }
 
