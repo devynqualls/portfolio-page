@@ -16,7 +16,7 @@ function App() {
         <CssBaseline>
           <Router>
             <Routes>
-              <Route exact path="/" element={<Main />} />
+              <Route exact path="/portfolio-page" element={<Main />} />
             </Routes>
           </Router>
         </CssBaseline>
