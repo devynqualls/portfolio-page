@@ -4,17 +4,26 @@
     "title": "DevFlix",
     "image": "../../assets/images/DevFlix.png",
     "description": "Netflix Clone titled Devflix Hosted on Firebase Created using JS React CSS HTML Future plan to add video trailer on hover for movie selection future plan to update styles",
-    "skills": ["React", "Material-UI", "Redux", "Polygon", "MetaMask"],
+    "skills": ["React", "Material-UI", "Redux", "Polygon", "Firebase"],
     "websiteLink": "https://main--graceful-narwhal-9dc749.netlify.app/",
     "githubLink": "https://github.com/devynqualls/netflix-clone"
   },
   {
     "id": "1",
     "title": "Tesla HomePage Clone",
-    "image": "../../assets/images/Devflix.png",
+    "image": ".src/assets/images/TeslaHomepage.png",
     "description": "Built a Tesla homepage clone featuring custom sections for upcoming Roadster and Cybertruck models.",
-    "skills": ["React", "Typescript", "CSS", "Netlify", "Supabase"],
+    "skills": ["React", "CSS", "Netlify", "Supabase"],
     "websiteLink": "https://devynqualls.github.io/teslahome/",
     "githubLink": "https://github.com/devynqualls/teslahome"
+  },
+  {
+    "id": "2",
+    "title": "Recipes Full Stack app",
+    "image": "../../assets/images/Recipes.png",
+    "description": "full-stack application for managing and searching recipes. It consists of a frontend built with React and a backend built with Express and Prisma.",
+    "skills": ["React", "Express", "NodeJS", "PostgreSQL", "NPM", "Prisma"],
+    "websiteLink": "https://devynqualls.github.io/recipes",
+    "githubLink": "https://github.com/devynqualls/recipes"
   }
 ]
